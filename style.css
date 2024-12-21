@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.bg{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.bg_image{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.sun{
+    position: absolute;
+    top: 36px;
+    right: 385px;
+    animation-name: sun;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sun {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.tree{
+    position: absolute;
+    top: 260px;
+    right: 688px;
+    animation-name: tree;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes tree {
+    0% {
+        right: -300px;
+    }
+    50% {
+        right: 2300px;
+    }
+    100% {
+        right: -300px; 
+    }
+}
+.mario{
+    position: absolute;
+    top: 70vh;
+    animation-name: mario;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes mario {
+    0% {
+        right: calc(100% - 60px);
+    }
+    50% {
+        right: -130px;
+    }
+    100% {
+        right: calc(100% - 60px);
+    }
+}
+.luigi{
+    position: absolute;
+    top: 84vh;
+    animation-name: luigi;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes luigi {
+    0% {
+        right: calc(100% - 60px);
+    }
+    50% {
+        right: -130px;
+    }
+    100% {
+        right: calc(100% - 60px);
+    }
+}
